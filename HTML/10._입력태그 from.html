@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입력 관련태그 - form 태그</title>
+  </head>
+  <body>
+    <h1>form 태그</h1>
+
+    <!--
+    입력양식을 작성하고 작성된 내용을 전달하는 공간
+
+    from이 아니라 form이다. 작성에 유의할 것!(자주하는 실수)
+
+    이름 : <input type ="text" name ="유저-이름"
+
+
+
+
+    고객이 네모난 칸(=input태그) 안에 작성한 값을 유저-이름 이름으로 개발자는 작성된 내용을 확인할 수 있음
+
+    -->
+
+    <!--
+    action = form 안에 있는 input작성된 값을 전달할 위치 = input 안에 작성한 내용을 전달할 위치 지정
+    button = 버튼이 눌릴 때까지 제출이 되지 않게 함
+    name   = 고객이 작성한 이름을 개발자에게 전달하기 위한 네임택 = 개발자가 사용자가 작성한 내용의 이름을 지정하는 속성
+    -->
+    <form action="10_결과.html">
+      이름 : <input type="text" name="유저-이름" />
+      <button>제출하기</button>
+    </form>
+    <!-- 폼 안에 작성한 내용을 10_결과.html문서로 제출하기-->
+     <form action="10_결과.html">
+      아이디 : <input type="text" name="아이디작성">
+      <br>
+      비밀번호 : <input type="password" name="패스워드작성">
+
+      <button>로그인(제출하기)</button>
+     </form>
+
+
+
+
+
+</html>
