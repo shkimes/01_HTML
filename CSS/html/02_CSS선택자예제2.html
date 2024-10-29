@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자 2 활용하기</title>
+    <style>
+      .num-ul {
+        /*기본 리스트 스타일 제거*/
+        list-style-type: none;
+      }
+      .num-li {
+        padding: 15px;
+        background-color: lightblue;
+        font-size: 18px;
+        border-radius: 8px;
+        margin: 5%;
+        /*
+            margin
+            <br> 태그 대신 상화좌우 공간 여백설정을 할 수 있는 속성
+            */
+      }
+      .num-li:hover {
+        background-color: lightcoral;
+        color: aliceblue;
+        transform: translateX(20px);
+        /*
+            translateX = x축을 이동
+            translateY = y축을 이동
+            */
+      }
+
+      .알파벳-ul {
+        list-style-type: none;
+      }
+
+      .알파벳-li {
+        padding: 20px;
+        margin: 10px;
+        background-color: #ddd;
+        border-radius: 8px;
+        font-size: 20px;
+        /*hover로 변경했을때 슬로우 모션으로 만듬*/
+        /*못적음*/
+      }
+
+      .알파벳-li:hover {
+        background-color: black;
+        color: white;
+        transform: translateY(15px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="컨테이너">
+      <h1>Hover효과가 있는 리스트</h1>
+      <ul class="num-ul">
+        <li class="num-li">1</li>
+        <li class="num-li">2</li>
+        <li class="num-li">3</li>
+        <li class="num-li">4</li>
+        <li class="num-li">5</li>
+      </ul>
+      <ul class="알파벳-ul">
+        <li class="알파벳-li">a</li>
+        <li class="알파벳-li">b</li>
+        <li class="알파벳-li">c</li>
+        <li class="알파벳-li">d</li>
+        <li class="알파벳-li">e</li>
+      </ul>
+    </div>
+  </body>
+</html>

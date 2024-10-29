@@ -1,0 +1,46 @@
+/*
+★단축키
+shift + alt+ f=자동정렬
+tab = 띄어쓰기
+shift + tab = 띄어쓰기 지우기 = 들여쓰기
+*/
+
+.make li {
+  font-size: 20px;
+  margin: 20px;
+}
+.make li:hover {
+  background-color: coral;
+  color: white;
+  padding: 20px;
+}
+.재료 {
+  list-style-type: none;
+}
+/*
+            class="재료"태그의 안에 작성된 li태그를 꾸며준다는 의미
+            ↓*/
+.재료 li {
+  background-color: #ddd;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 3px;
+}
+.재료 li:hover {
+  background-color: aliceblue;
+}
+
+.sandwich-info {
+  background-color: antiquewhite;
+  border: 3px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/*
+    id 이름명 -> # 이름명
+    class 이름명 -> .이름명
+    */
+.banner-img {
+  width: 100%;
+}
