@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>div 안 태그 가운데 정렬</title>
+    <style>
+      .T반 .아이들,
+      .Y반 .아이들,
+      .Z반 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      /*
+        이미지는 따로 img를 붙여야 크기가 적용되는데 글자는 span을 안붙여도 적용이 되는가
+        t y 반 아이들을 붙였을때 센터태그빼고 다 적용이 되는데 왜그럴까
+        신기한건 이미지는 변경되지 않음
+        */
+    </style>
+  </head>
+  <body>
+    <h1>div 안 태그 가운데 정렬</h1>
+    <div class="T반">
+      <!--모두 강아지-->
+      <span class="아이들">1</span>
+      <span class="아이들">2</span>
+      <span class="아이들">3</span>
+      <span class="아이들">4</span>
+      <span class="아이들">5</span>
+    </div>
+    <hr />
+    <div class="Y반">
+      <!--모두 강아지-->
+      <span class="아이들">가</span>
+      <span class="아이들">나</span>
+      <span class="아이들">다</span>
+    </div>
+    <style>
+      .Z반 img {
+        width: 200px;
+      }
+    </style>
+    <div class="Z반">
+      <!--모두 코뿔소-->
+      <img src="../image/flower1.jpg" />
+      <img src="../image/flower2.jpg" />
+      <img src="../image/flower3.jpg" />
+    </div>
+  </body>
+</html>

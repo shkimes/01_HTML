@@ -1,0 +1,81 @@
+/*전체적으로 배경 색상을 주고 싶다면 body태그에 작성하면 됨*/
+body {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+}
+.header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  /*h1의 폰트크기는 기본적으로 32px로 고정이지만 더 작게도 크게도 만들수 있다.*/
+  color: #ffa500;
+  font-size: 40px;
+}
+.main {
+  padding: 20px; /* 상 우 하 좌 모두 20px씩 적용 (띄운다)*/
+}
+.information,
+.gallery {
+  margin-bottom: 30px; /*아래로 여백 공간*/
+  background-color: #333;
+  color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  /*
+    입체적으로 보여주는 느낌
+    box-shadow : A B C color;
+                A : 왼쪽이나 오른쪽으로 얼마만큼 이동할 것인가 (0=이동안함)
+                B : 위 아래로 얼마만큼 이동할 것인가
+                C : 얼만큼 흐리게(뿌옇게) 만들 것인가? 
+            color : 그림자 효과 색상을 지정
+           색상 팁 : 
+      #영어로 시작 : 하얀색에서 시작한다는 의미
+      #숫자로 시작 : 검정색에서 시작한다는 의미
+      rgba(0,0,0,0.1~0.9)
+      rgba(0,0,0,불투명도)
+    */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: background-color 0.3s;
+}
+ul li:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 10px;
+}
+.img,
+.gallery2 {
+  text-align: center;
+}
+img,
+.gallery2 {
+  width: 150px;
+  border-radius: 8px;
+  border: 2px solid #444;
+  text-align: center;
+}
+img:hover {
+  width: 200px;
+}
+
+.gallery2:active {
+  width: 300px;
+}
+/*갤러리도 위 information 처럼 디자인설정*/
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #ffa500;
+}

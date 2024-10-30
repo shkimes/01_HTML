@@ -1,0 +1,105 @@
+/*
+      1.ul li
+      2.ul .list1
+      3..image-list list1
+      4..image-list li
+      =다 같은 결과가 나옴
+      */
+
+.image-list li {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.image-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.list1 {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+.list1:hover {
+  color: white;
+  font-size: 0; /*0으로 한 이유는 글자를 지우기 위해*/
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../HTML/flower1.jpg);
+}
+.list2 {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+.list2:hover {
+  color: white;
+  font-size: 0; /*0으로 한 이유는 글자를 지우기 위해*/
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../HTML/flower2.jpg);
+}
+
+.list3 {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+.list3:hover {
+  color: white;
+  font-size: 0; /*0으로 한 이유는 글자를 지우기 위해*/
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../HTML/flower3.jpg);
+}
+.list4 {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+.list4:hover {
+  color: white;
+  font-size: 0; /*0으로 한 이유는 글자를 지우기 위해*/
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../HTML/flower4.jpg);
+}
+
+.list5 {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+.list5:hover {
+  color: white;
+  font-size: 0; /*0으로 한 이유는 글자를 지우기 위해*/
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../HTML/flower5.jpg);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css선택자예제4</title>
+    <style>
+      table td th {
+        border: 1px solid black;
+      }
+      .tr-A .td-A {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>데이터1</th>
+        <th>데이터2</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr class="tr-A">
+        <td class="td-A">데이터A</td>
+        <td>데이터 B</td>
+        <td>데이터 C</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>데이터 (가)</td>
+        <td>데이터 (나)</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
