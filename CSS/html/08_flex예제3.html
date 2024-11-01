@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>justify-content활용해서 이미지 정렬</title>
+    <style>
+      img {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        border: 2px solid #333;
+      }
+      .container {
+        width: 90%;
+        margin: auto 20px;
+        display: flex;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      img:hover {
+        /*display: none = 숨기기(그러나 빈자리로 글 또는 이미지가 옮겨짐*/
+        visibility: hidden;
+        /*visibility: hidden = 숨기기(그러나 빈자리로 글 또는 이미지가 옮겨지거나 하지 않음)*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>justify-concent 를 이용해서 이미지 정렬</h1>
+    <div class="container" style="justify-content: space-between">
+      <div class="flower"><img src="../image/flower2.jpg" /></div>
+      <div class="flower"><img src="../image/flower3.jpg" /></div>
+      <div class="flower"><img src="../image/flower4.jpg" /></div>
+    </div>
+    <div class="container" style="justify-content: space-around">
+      <div class="halloween"><img src="../image/pumpkin.jpg" /></div>
+      <div class="halloween"><img src="../image/skull.jpg" /></div>
+      <div class="halloween"><img src="../image/web.jpg" /></div>
+    </div>
+    <div class="container" style="justify-content: space-evenly">
+      <div class="random"><img src="../image/flower1.jpg" /></div>
+      <div class="random"><img src="../image/ghost.jpg" /></div>
+      <div class="random"><img src="../image/flower5.jpg" /></div>
+    </div>
+  </body>
+</html>
