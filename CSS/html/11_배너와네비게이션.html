@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배너 및 네비게이션</title>
+    <style>
+      /*배너 스타일*/
+      /*
+        웹사아티를 만들 때 body에 혹시 모를 여백이 있을 수 있으니 margin : 0px 을 입력하고 시작
+        div로 설정했을때 생기는 여백 없애기.
+        */
+      body {
+        margin: 0px;
+      }
+      .banner {
+        background-color: aqua;
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        padding: 60px 0px;
+        font-weight: bold;
+      }
+
+      /*네비게이션 스타일*/
+      .nav {
+        /*ul 기본적으로 위 아래에 공간*/
+        list-style: none; /*=list-style-type:none;)*/
+        display: flex;
+        background-color: #333;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+      }
+      .nav a {
+        /*
+            a태그는 inline이기 때문에 패딩이 동작을 하지 않음
+            그래서 display:block 설정으로 덮어쓰기 후 가로 세로나 패딩 설정 가능
+            */
+        color: white;
+        padding-block: 12px;
+        text-decoration: none; /*밑줄제거*/
+        font-weight: bold;
+      }
+      .nav a:hover {
+        background-color: #555;
+      }
+
+      /*블로그*/
+      .blog {
+        width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+        /*
+            box-shadow : 0px 오른쪽으로 얼만큼 갈것인가
+            box-shadow :      4px 아래쪽으로 얼마나 갈것인가
+            box-shadow :           12px 얼마나 뿌옇게 만들것인가
+            box-shadow :                 rgba 불투명도 설정
+                                        rgba(0,0,0)=검정색
+                                        rgba(,,,0.1~0.9)=1에 가까울수록
+
+            */
+      }
+      .post {
+        background-color: #f9f9f9;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      h2 {
+        color: yellowgreen;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      h3 {
+        color: lightblue;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      span {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--배너-->
+    <div class="banner">웹사이트에 오신 것을 환영합니다</div>
+    <ul class="nav">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">소개</a></li>
+      <li><a href="#">서비스</a></li>
+      <li><a href="#">연락하기</a></li>
+    </ul>
+
+    <!--블로그 섹션-->
+    <!--
+    log = (컴퓨터) 기록 일지에 어떤 문제가 생겼는지 무슨일이 있었는지 기록
+    blog = (we)blog
+    v log = v(ideo)log
+    -->
+
+    <div class="blog">
+      <div class="post">
+        <h2>첫 번재 블로그 포스트</h2>
+        <p>안녕하세요 블로그를 오픈했습니다. 많은 관심부탁드려요</p>
+      </div>
+      <div class="post">
+        <h2><span>&#x1F36A;</span>쿠키 만들기 포스팅!</h2>
+        <p>밀가루에 우유와 계란을 넣고 반죽을 한다</p>
+        <p>설당과 초콜렛 칩을 넣는다</p>
+        <p>오븐에서 20분 동안 굽는다</p>
+      </div>
+      <div class="post">
+        <h3>개발 공부하기 : 코딩HTML편</h3>
+        <p>Doctype은 document type 의 줄임말이다</p>
+        <p>문서탑의 html로 html을 설정해주기 위해 넣는다</p>
+      </div>
+    </div>
+  </body>
+</html>

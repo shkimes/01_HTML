@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS선택자 4</title>
+    <style>
+      .test1 > p:nth-child(2n) {
+        background-color: aqua;
+      }
+      .test1 > p:nth-child(2n-1) {
+        background-color: aquamarine;
+      }
+      /*
+        2n=짝수
+        2n-1=홀수
+        */
+      /* 
+        
+        */
+    </style>
+  </head>
+  <body>
+    <h1>부모 자식 선택자</h1>
+    <h2>일반 구조(위치)선택자</h2>
+    <pre>
+        형제관계가 있는 요소중에서 특정 요소만을 선택하는 선택자
+        *중요* -> 위치를 기준으로 구분
+
+        A:first=child -> 형제들 중 첫 번째가 A가 맞다면 선택
+        A:last-child  -> 형제들 중 마지막이 A가 맞다면 선택
+        A:nth-child(n=숫자값)-> 형제들 중 n번째에 A가 맞다면 선택
+        A:nth-last-child-> 형제들 중 뒤에서 n번째가 A가 맞다면 선택자
+    </pre>
+    <div class="test1">
+      <p>pre밑에 오는 p태그</p>
+      <p>pre밑에 오는 p태그</p>
+      <p>pre밑에 오는 p태그</p>
+      <p>pre밑에 오는 p태그</p>
+      <p>pre밑에 오는 p태그</p>
+    </div>
+  </body>
+</html>
