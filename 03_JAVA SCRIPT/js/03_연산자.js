@@ -30,7 +30,7 @@ function 더하기() {
     
           */
 
-  결과.innerText = number(숫자1.value) + number(숫자2.value);
+  결과.innerText = Number(숫자1.value) + Number(숫자2.value);
   /*
          두 수의 합을 아이디가 계산결과인 요소에 내부글자(innerText)로 넣어주기.
          */
