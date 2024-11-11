@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>버튼을 활용한 음료 주문하기</title>
+    <style>
+      button {
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 10px 20px;
+      }
+      button:hover {
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>음료 주문하기</h1>
+    <div>
+      <button onclick="add('1')">아메리카노(&#8361;3000원)</button>
+      <button onclick="add('2')">카페라떼(&#8361;5000원)</button>
+      <button onclick="add('3')">푸라푸치노(&#8361;8000원)</button>
+    </div>
+    <div id="price">금액확인하기 : &#8361; 0</div>
+    <script>
+      const price = document.getElementById("price");
+
+      function add(mun) {
+        price.innerText = "금액확인하기 : &#8361;" + price;
+      }
+
+      function add(num) {
+        // function()안에 있는게 html에 있는 onclick과 같은 수식
+        switch ("num") {
+          case "1":
+            price.innerText = "금액확인하기 : &#8361;" + price;
+            break;
+          case "2":
+            price.innerText = "금액확인하기 : &#8361;" + price;
+            break;
+          case "3":
+            price.innerText = "금액확인하기 : &#8361;" + price;
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

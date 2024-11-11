@@ -69,17 +69,20 @@
         // output = 잔액의 아이디
 
         const Amount = amount.value;
-        balance -= Amount;
-        output.innerText = balance;
-        if (balance <= 0) {
-          alert("잔액이 부족하여 출금할 수 없습니다");
-        }
-        if (Amount == 10000) {
+
+        const pw = prompt("비밀번호를 입력해주세요");
+        if (pw == 1234) {
+          if (balance <= Amount) {
+            alert("잔액이 부족하여 출금할 수 없습니다");
+          } else {
+            Amount.value = "";
+            balance -= Amount;
+            output.innerText = balance;
+          }
         } else {
-          alert("금액을 입력해주세요");
+          alert("비밀번호가 일치하지 않습니다.");
         }
       }
-
       function 입금기능() {
         //입금버튼 클릭시
         //input에 입력된 금액 만큼 잔액(balance)에 추가

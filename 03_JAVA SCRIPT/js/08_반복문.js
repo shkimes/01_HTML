@@ -63,3 +63,63 @@ function check5() {
   //b는 for안에서 작성한 변수명이기 때문에 {}를 나오고 나서는 사용 x
   alert("결과:" + result2);
 }
+
+/*
+while 문 기본 구조 
+while (조건) {
+//반복할 코드}
+*/
+
+function while1() {
+  let num = 1; // let은 변할 수 있는 변수명 작성, const 변할 수 없는 상수명을 작성
+
+  while (num <= 5) {
+    //조건이 true일 때 실행할 구문 작성
+    alert(num);
+    //계속 num값이 1이기 때문에 무한 반복
+    num++; //num = num +1;
+    //num숫자를 1씩 증가시키기
+  }
+}
+
+function while2() {
+  let num = 0;
+  while (num <= 10) {
+    num++;
+    console.log(num);
+  }
+}
+
+function while3() {
+  let num = 1;
+  while (num <= 10) {
+    console.log(num);
+    num++;
+
+    if (num == 5) {
+      break;
+    }
+  }
+}
+
+//while4 라는 지역변수
+//while4 라는 지역변수 안에서만 사용하는 변수명을 설정할 경우에는 {}안에 변수명을 작성
+
+function while4() {
+  let xyz = 0;
+  while (xyz <= 20) {
+    xyz++;
+    console.log(xyz);
+  }
+}
+
+function while5() {
+  let num = 5;
+  while (num <= 20) {
+    console.log(num);
+    num++;
+    if ((num = 15)) {
+      break;
+    }
+  }
+}

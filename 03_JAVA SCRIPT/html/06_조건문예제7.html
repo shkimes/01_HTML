@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나이 조회하기</title>
+    <style>
+      input {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>나이 확인하기</h1>
+    <input
+      type="number"
+      id="inputAge"
+      max="100"
+      min="0"
+      placeholder="나이를 입력하시오"
+    />
+    <button onclick="check()">확인</button>
+    <p id="result"></p>
+    <script>
+      function check() {
+        const age = document.getElementById("inputAge").value();
+        const result = document.getElementById("result");
+
+        if (13 <= age && age >= 18) {
+          result.innerText("청소년입니다. 제한이 있을 수 있습니다");
+          alert("청소년입니다"), alert("제한이 있을 수 있습니다");
+        } else if (18 <= age && age <= 100) {
+          alert("성인입니다");
+        } else if (13 >= age) {
+          alert("어린아이입니다"), alert("보호자의 동의가 필요합니다");
+        } else {
+          result.innerText("나이를 입력해주세요");
+        }
+      }
+    </script>
+  </body>
+</html>
