@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>return을 활용해서 빵 가격 가져오기</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>빵 구매하기</h1>
+    <button onclick="빵구매('크루아상')">크루아상 구매하기</button>
+    <button onclick="빵구매('식빵')">식빵 구매하기</button>
+    <button onclick="빵구매('베이글')">베이글 구매하기</button>
+    <button onclick="빵구매('소금빵')">소금빵 구매하기</button>
+    <button onclick="빵구매('단팥빵')">단팥빵 구매하기</button>
+    <button onclick="빵구매('피자빵')">피자빵 구매하기</button>
+    <h3 id="result"></h3>
+
+    <script>
+      function 빵구매(asd) {
+        const res = document.getElementById("result");
+        const price = 빵가격(asd);
+        if (price > 0) {
+          res.innerText =
+            asd + " 구매가 완료되었습니다. 가격은 " + price + "입니다";
+        } else {
+          res.innerText = "아직 준비중입니다";
+        }
+      }
+      function 빵가격(asd) {
+        if (asd === "크루아상") {
+          return 3000;
+        } else if (asd === "식빵") {
+          return 2000;
+        } else if (asd === "베이글") {
+          return 2500;
+        } else {
+          return 0;
+        }
+      }
+    </script>
+  </body>
+</html>
