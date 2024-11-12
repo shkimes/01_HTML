@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+button {
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  background-color: aqua;
+  color: white;
+}
+button:hover {
+  background-color: aliceblue;
+}

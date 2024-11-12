@@ -1,0 +1,30 @@
+#hint1,
+#hint2,
+#hint3,
+#hint4,
+#hint5 {
+  display: none;
+  color: red;
+}
+
+h1 {
+  background-color: aquamarine;
+  width: 500px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px;
+  margin: auto;
+}
+body {
+  background-color: aliceblue;
+}
+input {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+form {
+  text-align: center;
+}

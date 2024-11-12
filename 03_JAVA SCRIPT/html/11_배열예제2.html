@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>점심 메뉴 뽑기</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      h1 {
+        color: #333;
+      }
+      h3 {
+        color: orange;
+      }
+      button {
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>점심 메뉴 뽑기</h1>
+    <div>
+      <h3>오늘의 점심 : <span id="menuResult"></span></h3>
+      <button onclick="selectMenu()">뽑기</button>
+    </div>
+    <script src="../js/11_배열예제2.js"></script>
+  </body>
+</html>

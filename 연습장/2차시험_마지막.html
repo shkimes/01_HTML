@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2차시험</title>
+    <style>
+      #hint1,
+      #hint2,
+      #hint3,
+      #hint4,
+      #hint5 {
+        display: none;
+        color: red;
+      }
+
+      h1 {
+        background-color: aquamarine;
+        width: 500px;
+        text-align: center;
+        border-radius: 8px;
+        padding: 20px;
+        margin: auto;
+      }
+      body {
+        background-color: aliceblue;
+      }
+      input {
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      form {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>회원가입하기</h1>
+    <form action="회원가입 성공!.html">
+      <label>아이디</label>
+      <input
+        type="text"
+        id="user-id"
+        required
+        onfocus="힌트보기1()"
+        onblur="힌트숨기기1()"
+      />
+      <p id="hint1">영 대/소문자를 입력해주세요</p>
+      <br />
+      <label>비밀번호</label>
+      <input
+        type="password"
+        id="user-pw1"
+        required
+        onfocus="힌트보기2()"
+        onblur="힌트숨기기2()"
+      />
+      <p id="hint2">
+        영 대/소문자, 특수기호, 숫자를 8~32자 이내로 입력해주세요
+      </p>
+      <br />
+      <label>비밀번호 확인</label>
+      <input
+        type="password"
+        id="user-pw2"
+        required
+        onfocus="힌트보기3()"
+        onblur="힌트숨기기3()"
+      />
+      <p id="hint3">비밀번호를 똑같이 입력해 주세요</p>
+      <br />
+      <label>이메일</label>
+      <input
+        type="email"
+        id="user-email"
+        required
+        onfocus="힌트보기4()"
+        onblur="힌트숨기기4()"
+      />
+      <p id="hint4">이메일을 작성해주세요</p>
+      <br />
+      <label>주소</label>
+      <input
+        type="text"
+        id="user-house"
+        required
+        onfocus="힌트보기5()"
+        onblur="힌트숨기기5()"
+      />
+      <p id="hint5">주소를 작성해주세요</p>
+      <br />
+      <button>회원가입하기</button>
+    </form>
+
+    <script>
+      const h1 = document.getElementById("hint1");
+      const h2 = document.getElementById("hint2");
+      const h3 = document.getElementById("hint3");
+      const h4 = document.getElementById("hint4");
+      const h5 = document.getElementById("hint5");
+
+      function 힌트보기1() {
+        h1.style.display = "block";
+      }
+      function 힌트숨기기1() {
+        h1.style.display = "none";
+      }
+      function 힌트보기2() {
+        h2.style.display = "block";
+      }
+      function 힌트숨기기2() {
+        h2.style.display = "none";
+      }
+      function 힌트보기3() {
+        h3.style.display = "block";
+      }
+      function 힌트숨기기3() {
+        h3.style.display = "none";
+      }
+      function 힌트보기4() {
+        h4.style.display = "block";
+      }
+      function 힌트숨기기4() {
+        h4.style.display = "none";
+      }
+      function 힌트보기5() {
+        h5.style.display = "block";
+      }
+
+      function 힌트숨기기5() {
+        h5.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

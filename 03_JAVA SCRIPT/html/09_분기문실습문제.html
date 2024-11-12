@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카페 주문 누적 금액 출력하기</title>
+    <style>
+      button {
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 20px;
+      }
+      #total {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>음료 주문하기</h1>
+    <div>
+      <button onclick="add('1')">아메리카노 (&#8361;3000)</button>
+      <button onclick="add('2')">카페라떼 (&#8361;5000)</button>
+      <button onclick="add('3')">푸라푸치노 (&#8361;8000)</button>
+      <div id="total">총 금액 &#8361; 0원</div>
+    </div>
+    <script>
+      let totalCount = 0; // 누적된 금액을 담는 변수
+      const totalPrice = document.getElementById("total");
+      function add(drink) {
+        let price = 0; // if문을 활용해서 출력된 숫자값을 담을 변수
+        /* if (drink === "1") {
+          price = 3000;
+        } else if (drink === "2") {
+          price = 5000;
+        } else if (drink === "3") {
+          price = 8000;
+        }*/
+
+        switch (drink) {
+          case "1":
+            price = 3000;
+            break;
+          case "2":
+            price = 5000;
+            break;
+          case "3":
+            price = 8000;
+            break;
+        }
+
+        totalCount += price;
+        totalPrice.innerText = `총 금액 ${totalCount}원`;
+      }
+    </script>
+  </body>
+</html>
