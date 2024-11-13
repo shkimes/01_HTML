@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>태그명으로 요소 접근하기</title>
+  </head>
+  <body>
+    <ul>
+      <li>red</li>
+      <li>orange</li>
+      <li>yellow</li>
+      <li>green</li>
+    </ul>
+    <button onclick="tagtest()">배경색 변경</button>
+    <script>
+      function tagtest() {
+        const tag = document.getElementsByTagName("li");
+        //ul 태그 안에 작성된 li요소들을 모두 가져온다는 의미
+        alert(tag[0].innerText); // = 태그의 0번째에 적힌 텍스트를 불러볼께
+        tag[0].style.backgroundColor = tag[0].innerText;
+        tag[1].style.backgroundColor = tag[1].innerText;
+        tag[2].style.backgroundColor = tag[2].innerText;
+        tag[3].style.backgroundColor = tag[3].innerText;
+        //태그 안에 작성된 요소값들은 모두 기본적으로 ""로 감싸져 있다.
+
+        // script는 에러가 생기면 뒷내용이 맞아도 에러부분에서 아예 작동을 중지함
+
+        //<body>와 같은 기본적인 태그들은 따로 id나 class를 작성하지 않아도 가능
+
+        document.body.style.backgroundColor = "lightblue";
+        // body 같은 태그는 tagname으로 불러오지 않아도 된다.
+      }
+    </script>
+  </body>
+</html>

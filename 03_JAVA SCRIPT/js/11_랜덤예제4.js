@@ -15,7 +15,7 @@ function pick() {
   const random = Math.floor(Math.random() * fruit.length);
   // 소숫점을 내림하여 정리하고(무작위로 난수생성)*fruit의 갯수  ==를 random으로 지정할께
   res.innerText = fruit[random];
-  // div에 있는 id result 에 텍스트를 출력할께
+  // div에 있는 id result 에 const. random텍스트를 출력할께
   console.log("fruit[" + random + "]=" + fruit[random]);
   // f12로 볼수있는 개발자사이트(?)에 기록을 남길게
 
